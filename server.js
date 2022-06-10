@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8000
 const username = process.env.DB_USERNAME
 const password = process.env.DB_PASSWORD
 
-const URL = `mongodb+srv://Hitesh:Hitesh@800@ms.q54bx.mongodb.net/Cluster0?retryWrites=true&w=majority`;
+const URL = `mongodb+srv://${username}:${password}@ms.q54bx.mongodb.net/Cluster0?retryWrites=true&w=majority`;
 
 Connection(process.env.MONGODB_URI || URL);
 
